@@ -1,0 +1,55 @@
+p,h1,html,body,a,
+  
+   body
+   {
+	   background-color: white;
+   }
+  
+   p
+  {
+	  background-color: white;
+	  display: inline;
+	  padding: 0;
+  }
+  nav ul p
+  {   
+      background-color: white;
+	  font-size: 2em;
+	  font-style: italic;
+	  background-size: 100px 100px 100px 100px;
+  }
+    ul li
+  {
+	  list-style: none;
+	  display: inline;
+	  margin-left: 20px;
+  }
+  nav ul p1
+  {
+	  font-size: 1em;
+	  font-style: oblique;
+  }
+  section h1 
+  {
+	 text-align: center;
+     padding: 10px;	 
+  }
+  section p 
+  {
+	 text-align: center;
+     padding: 0px; 
+  }
+  section h3
+  {
+	  text-align: center;
+     padding: 10px;
+  }
+  hr
+  {
+	  position: relative;
+	  top: 10px;
+	  border: none;
+	  height: 0.5px;
+	  background: gray;
+	  margin-bottom: 100px;
+  }
