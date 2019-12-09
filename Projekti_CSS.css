@@ -7,14 +7,21 @@ p,h1,html,body,a,div,figure,img
 
    p
   {
-	  background-color: black;
+	 /* background-color: black; */
 	  display: inline;
 	  padding: 0;
 
   }
+/* icons orange from black*/
+  p i:hover { color: orange;
+  }
+
+
+
+
   /* e kemi ndryshu kornizen e inputit search*/
-label input {
-              border-radius: 10px;
+label input  {
+               border-radius: 10px;
                 background: #353535;
                 padding: 10px;
                 width: 200px;
@@ -23,31 +30,49 @@ label input {
                 color: white;
 }
   p label  {float: right; }
+  
+  /*rregullimi ikonave in,twitter etj */
+  body p a
+  {
+      padding: 14px;
+      
+      
+  }
 
-
-
-img :hover {color: orange;}
 
   nav ul p
   {
       background-color: white;
-	  font-size: 2em;
+	  font-size: 2.6em;
 	  font-style: italic;
 	  background-size: 100px 100px 100px 100px;
   }
+  
+  nav ul p2
+  {
+       background-color: white;
+	  font-size: 2em;
+	  font-style: italic;
+  }
+  
+  
+  
+  
     ul li
   {   float: right;
 	  list-style: none;
 	  display: inline;
 	  margin-left: 20px;
-	/* border-bottom: 1px solid #000*/
+ }
 
+/* menyte(homepage...) me elementin hover,border per vijen*/
+  ul li :hover{color: hotpink;
+  border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    border-color: hotpink;
   }
-  ul li :hover {color: hotpink;
-  }
 
-
-
+/* heqja e underline te linkut*/
  li a {text-decoration:none;
       /* border-bottom: 1px solid #000*/
 
@@ -65,11 +90,13 @@ figcaption h4 { float: left;}
   {
 	 text-align: center;
      padding: 10px;
+     font-size: 5em;
+     font-family:serif;
+     
   }
-
-li a {color: black;}
-
-
+/* menyte homepage....*/
+li a {color: black;
+}
 
 
   div
@@ -106,7 +133,7 @@ font-family: "Times New Roman", Times, serif;
   color: white;
 }
 /* vija pas view full gallery*/
-  hr #aa
+   #v1
   {
 	  position: relative;
 	  top: 10px;
@@ -115,6 +142,10 @@ font-family: "Times New Roman", Times, serif;
 	  background: gray;
 	  margin-bottom: 100px;
   }
+  
+ 
+  
+  
  figure  img   {
                float: left;
                width: 10%;
@@ -125,8 +156,6 @@ font-family: "Times New Roman", Times, serif;
                border: thin silver solid;
                margin: 0px;
                padding: 5em;
-
-
 }
 figure h4 {text-align: left;
          text-indent: 0;
@@ -135,13 +164,57 @@ figure h4 {text-align: left;
 nav #1 {float: right;
         right: 50px;
 }
-
 /* vija pas fotove pink*/
-section hr {  position: relative;
+hr #v2 {
+          position: relative;
     	  top: 250px;
     	  border: none;
     	  height: 8px;
     	  margin-bottom: 50px;
-    	  background-color: #C54661;
+    	  background: hotpink;
 }
 
+  hr #v3
+  {
+      position: relative;
+      top:10px;
+      border: none;
+      heigh:0.5px;
+      backgroung: gray;
+      margin-bottom: 100px;
+      
+  }
+/* dizajnimi i tabeles*/
+table {
+       width: 100%;
+       text-align: left;
+}
+th {
+  height: 50px;
+}
+
+td #submit {
+  border-radius: 10px;
+  background: #D24260;
+  padding: 15px;
+  width: 80px;
+  height: 10px;
+  text-decoration: none;
+  color: white;
+
+}
+td a {text-decoration: none;}
+
+
+
+.fa-clickable {
+    cursor:pointer;
+    outline:none;
+}
+
+p a i {color: black;}
+
+footer p1
+{
+    margin-left: 1000px;
+}
