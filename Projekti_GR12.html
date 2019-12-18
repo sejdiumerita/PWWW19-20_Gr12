@@ -1,4 +1,8 @@
 
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +10,18 @@
     <title>Projekti</title>
     <link rel="stylesheet" type="text/css" href="Projekti_CSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 <p>
 
 
-    <a href="www.facebook.com"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+    <a href="www.facebook.com"><i class="fa fa-snapchat" style="font-size:24px"></i></a>
     <a href="www.twitter.com"><i class="fa fa-twitter" style="font-size:24px"></i></a>
     <a href="www.pinterest.com"><i class="fa fa-pinterest" style="font-size:24px"></i></a>
     <a href="www.google.com"><i class="fa fa-google-plus-circle" style="font-size:24px;"></i></a>
-    <a href="www.google.com"><i class="fa fa-wifi" style="font-size:24px;"></i></a>
+    <a href="www.google.com"><i class="fa fa-google-plus-circle" style="font-size:24px;"></i></a>
 
 
     <label>
@@ -26,29 +31,127 @@
 <p>
     <nav>
         <ul>
-            <p>F</p><p2>RESH</p2><p>L</p><p2>OOK</p2> <br>
-<p1>Free PSD Website Template</p1>
+<p>EXPLORINGGALAXY</p> <br>
+<p1>The magnificient of God's creation</p1>
 
-<li><a href="#">DROPDOWN</a></li>
-<li><a href="#">STYLE DEMO</a></li>
-<li><a href="#">FULL WIDTH</a></li>
-<li><a href="#">PORTFOLIO</a></li>
-<li><a href="#">GALLERY</a></li>
-<li><a href="#">HOMEPAGE</a></li><hr align="right" width="42%">
+<li><a href="#">FUN FACTS</a></li>
+<li><a href="#">STARS</a></li>
+<li><a href="#">CONSTELLATIONS</a></li>
+<li><a href="#">SOLAR SYSTEM</a></li>
+<li><a href="#">NEWS</a></li>
+<li><a href="#">HOMEPAGE</a></li><hr align="right" width="50%">
 <br>
         </ul>
      </nav>
 </p>
 
+
+
+<!-- animacioni me fotot-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/g1.jpg"/>
+        <div class="text">Full-width images with number Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/g2.jpg" />
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/g3.jpg" />
+        <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/g4.jpg" />
+        <div class="text">Caption Four</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/g5.jpg"/>
+        <div class="text">Caption Five</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+<!-- per slide caption-->
+$(window).load(function() {
+  $('.text').text({
+    animation: "slide"
+  });
+});
+
+</script>
+<!--caption text-->
+<style type="text/css">
+.text {
+  width: 96%;
+  padding: 40px;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 8px;
+}
+</style>
+
+
+
 <section>
-    <h1> WELCOME TITLE</h1>
+    <h1> ASTRONOMY FACTS</h1>
     <div>
-    <pre> " Numri pi, i cili zakonisht shënohet me gërmën e vogël të alfabetit grek
-        π (lexo pi apo pi-greke), është një konstantë matematikore "  </pre></div>
+    <pre> "Everything about astronomy,welcome to our universe adventure"</pre></div>
 
 
     <h3 id="b"> <a href="#">
-        VIEW THE FULL GALERY &#187</a> </h3>
+        VIEW THE FULL GALLERY &#187</a> </h3>
 </section>
 <hr id="v1">
 
@@ -56,17 +159,42 @@
     <table id="1" border="0">
         <thead>
         <tr>
-            <th><figure><img src="Images/wifi.png"/>
-            <figcaption>Title goes here</figcaption></figure></th>
-            <th><figure><img src="Images/wifi.png"/><figcaption>Title goes here</figcaption></figure></th>
+            <th><figure><img src="Images/g6.jpg" />
+                <figcaption><a href="#">List of 10 Brightest Stars in The Night Sky</a></figcaption>
+
+            </figure><p>With the naked eye, the stars may all
+                appear to
+                be similar,<br>
+                and nothing more than pinholes in the sky, but
+                the reality
+                is that<br>
+                the stars come in a wide, almost stupefying range
+                of sizes,
+                masses,<br>
+                colors, compositions, and spectra. </p></th>
+            <th><figure><img src="Images/g8.jpg" /><figcaption><a href="#">Star Constellations: The Zodiac</a></figcaption></figure>
+            <p>There are 88 modern constellations occupying different <br>
+                regions of the sky, with the 12 zodiac constellations <br>
+                situated within a 9° band either side of the ecliptic <br>
+                plane. This 18 ° wide imaginary line traces the apparent <br>
+                path that the Sun, Moon, and planets take over the course of a year. </p></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th><figure><img src="Images/wifi.png"/>
-                <figcaption>Title goes here</figcaption>
-            </figure>  </th>
-            <th><figure><img src="Images/wifi.png"/><figcaption>Title goes here</figcaption></figure></th>
+            <th><figure><img src="Images/g9.jpg"/>
+                <figcaption><a href="#"> The Solar System</a></figcaption>
+            </figure><p>Our Solar System is 4.6 billion years old and<br>
+                was formed inside a diffuse cloud of interstellar gas <br>
+                and dust called a nebula. At its center is a giant ball  <br>
+                of exploding hydrogen (75%) and helium (24.9%) called the Sun,</p></th>
+
+            <th><figure><img src="Images/g4.jpg"/><figcaption><a href="#">20 Recommended Astronomy Books</a></figcaption></figure>
+            <p>There are thousands of internet resources that serve the <br>
+                interests of the majority of most amateur astronomers <br>
+                most of the time. However, some types of information can <br>
+                only be obtained from old-style paper books. It is a rare <br>
+                amateur astronomer that does not own a collection of books</p></th>
         </tr>
         </tbody>
     </table>
@@ -108,16 +236,8 @@
         </tr>
         </tbody>
     </table>
-    <hr id="v3">
 </section>
-    
-    <footer>
-        <p> Copyright &copy; 2013 -All Rights Reserved- Domain Name </p>
-        
-        <p1> Template by OS Tamplates</p1>
-    </footer>
-    
-    
-    
+
 
 </body>
+</html>
