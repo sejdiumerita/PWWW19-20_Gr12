@@ -1,10 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-
-h1,h2,h3, legend
+ legend
 {
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 body
@@ -19,16 +16,58 @@ table
     margin: 0 auto ;
 }
 
+
 legend
 {
-    background-color: #D24260;
-    color:white;
-    margin:0;
-    width: 50%;
-    padding: 1em;
-    text-align: center;
-    font-weight: bold;
-    
-    
-    
+   text-align: center; 
+   font-size: 30px;
 }
+
+
+fieldset
+{
+    margin:1em auto;
+    width: 35%;
+}
+
+form p
+{
+    margin-top: 1.5em
+}
+
+form input[type="text"]
+{
+    height: 30px;
+    font-size: 16px;
+    padding: 2px;
+}
+form select
+{
+    height: 40px;
+    font-size: 16px;
+    padding: 2px;
+}
+form input[type="date"],form input[type="email"]
+{
+    height: 30px;
+    font-size: 16px;
+    padding: 2px;
+   
+}
+
+form input[type="reset"],form input[type="submit"]
+{
+   height: 30px;
+   font-size: 16px;
+    padding: 2px;
+}
+
+form input[type="tel"]
+{
+    height: 30px;
+    font-size: 16px;
+    padding: 2px;
+}
+
+
+
