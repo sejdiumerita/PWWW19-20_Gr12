@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Faqja1</title>
+        <link rel="stylesheet" type="text/css" href="Faqja1.css">
         <script type="text/javascript" src="js/Application.js"></script>
    </head>
     <body> 
@@ -15,19 +16,23 @@
         <td colspan="2">
        
             <p> <label>Name</label></br>
-            <input type="text" name="title" placeholder="Type your name"/> 
+                <input type="text" name="name" id="name" placeholder="Type your name" class="required hilightable" /> 
             </p>         
             <p> 
             <label>Surname</label></br>
-            <input type="text" name="title" placeholder="Type your surname"/>  
+            <input type="text" name="surname" id="surname" placeholder="Type your surname" class="required hilightable"/>  
             </p>
             <p>
             <label>Email</label></br>
-            <input type="email" name="title" placeholder="name@domain.com"/>
+            <input type="email" name="email" id="email" placeholder="name@domain.com" class="required hilightable"/>
             </p>
             <p>
-            <label>Age</label></br>
-            <input type="date" name="date" />
+                <label>Phone number</label>
+                <input type="tel"  name="Phone number" id="Phone number" placeholder="Type your phone number" />
+            </p>
+            <p>
+            <label>Birthday</label></br>
+            <input type="date" name="birthday" id="age" class="required hilightable" />
             </p>
         </tr>
         </td>
@@ -45,17 +50,17 @@
              
             
     <p> <label>Profesion</label><br/>
-        <input type="text" name="profesioni" list="profesioni">
-        <datalist id="profesioni">
+        <select name="profesioni" class="hilightable">
+            <option>Choose profesion</option>
             <option>Student</option>
             <option>Employed</option>
-        </datalist>
+        </select>
     </p>
    
              
         <p><label>City</label><br/>
-        <input type="text" name="city" list="qytetet">
-        <datalist id="qytetet">
+            <select name="City" class="hilightable ">
+            <option>Choose city</option>
             <option>Prishtne</option>
             <option>Peje</option>
             <option>Prizeren</option>
@@ -64,10 +69,11 @@
 	    <option>Ferizaj</option>
 	    <option>Mitrovice</option>
             <option>Viti</option>
-        </datalist>
+        </select>
 </p>
       <p>
-        <input type="submit" name="Submit"
+        <input type="submit" name="Submit"/>
+        <input type="reset" name="Reset"/>
       </p>
       </td>
     </table>
@@ -75,4 +81,5 @@
 </form>
 </body>
 </html>
+     
      
