@@ -2,14 +2,8 @@ p,h1,html,body,a,div,figure,img
 
    body
    {
-	 /*  background-color: white;
-	   width: 960px;
-	   height: 350px;
-	   margin: 0;
-	   padding:0;
-	   position: relative;
-*/
-
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+/*background-image: url(Images/g34.jpg);*/
    }
 
    p
@@ -20,7 +14,7 @@ p,h1,html,body,a,div,figure,img
 
   }
 /* icons orange from black*/
-  p i:hover { color: orange;
+  p i:hover { color: DarkViolet;
   }
 
   /* e kemi ndryshu kornizen e inputit search*/
@@ -38,7 +32,7 @@ label input  {
 
   nav ul p
   {
-      background-color: white;
+
 	  font-size: 2em;
 	  font-style: italic;
 	  background-size: 100px 100px 100px 100px;
@@ -51,52 +45,56 @@ label input  {
  }
 
 /* menyte(homepage...) me elementin hover,border per vijen*/
-  ul li :hover{color: hotpink;
+  ul li :hover{color: DarkViolet;
   border-bottom: 1px solid #000;
     padding-bottom: 8px;
-    border-color: hotpink;
+    border-color: DarkViolet;
   }
 
 /* heqja e underline te linkut*/
- li a {text-decoration:none;
-      /* border-bottom: 1px solid #000*/
+ li a {text-decoration:none;}
+/* icons pinterest,google... to gray*/
+p a i {color: gray;}
 
-}
 
 figcaption h4 { float: left;}
 
   nav ul p1
   {
 	  font-size: 1em;
-	  font-style: oblique;
+
   }
 
-  section h1
+/*vendosja e titullit ne mes dhe ndryshimi i fontit */
+   h1
   {
 	 text-align: center;
      padding: 10px;
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+     font-size: 60px;
+     color: DarkViolet;
+     font-variant: small-caps;
+     text-transform: capitalize;
   }
 /* menyte homepage.... black*/
-li a {color: black;
-}
+li a {color: black;}
 
   div
   { float: center;
 	 text-align: center;
      padding: 0px;
-font-family: "Times New Roman", Times, serif;
   }
 /* welcome title (Astronomy facts)*/
   section h3
   {
 	  text-align: center;
-     padding: 10px;
+      padding: 10px;
   }
 
-  /* borders te vieww full gallery*/
+  /* borders te view full gallery*/
 #b a{
   border-radius: 10px;
-  background: #D24260;
+  background: DarkViolet;
   padding: 10px;
   width: 300px;
   height: 10px;
@@ -106,7 +104,7 @@ font-family: "Times New Roman", Times, serif;
 /* border search*/
   #search {
   border-radius: 10px;
-  background: #D24260;
+  background: DarkViolet;
   padding: 10px;
   width: 50px;
   height: 10px;
@@ -135,14 +133,13 @@ font-family: "Times New Roman", Times, serif;
                border: thin silver solid;
                margin: 0px;
                padding: 0.5em;
+
 }
 figure h4 {text-align: left;
          text-indent: 0;
          }
 
-nav #1 {float: right;
-        right: 50px;
-}
+
 /* vija pas fotove pink*/
 hr #v2 {
           position: relative;
@@ -150,11 +147,10 @@ hr #v2 {
     	  border: none;
     	  height: 8px;
     	  margin-bottom: 50px;
-    	  background: hotpink;
+    	  background: DarkViolet;
 
 }
-#2 {background-color:green;
-      color:white;}
+
 /* dizajnimi i tabeles*/
 table {
        width: 100%;
@@ -164,17 +160,17 @@ th {
   height: 50px;
 }
 
+
 td #submit {
   border-radius: 10px;
-  background: #D24260;
+  background: DarkViolet;
   padding: 15px;
   width: 80px;
   height: 10px;
   text-decoration: none;
   color: white;
-
-
 }
+
 td a {text-decoration: none;}
 
 table figure img {
@@ -187,17 +183,19 @@ table figure img {
 
 }
 
-p a i {color: black;}
+p a i {color: gray;}
 /* heqja e nenvizimit te linkut tek temat(list of  meteors...)*/
  a {text-decoration: none;
-    color: hotpink;}
+    color: black;
+    }
+    a:hover {color: DarkViolet;}
 
 /* fotot e animacionit*/
 
 {border-sizing: 60px;
  border-box: 200px;
  border-radius: 20px;}
-/*body {font-family: Verdana, sans-serif; margin:0}*/
+
 .mySlides  {display: none;}
 .mySlides img {vertical-align: middle;
      height: 350px;
@@ -251,3 +249,35 @@ box-width: 60px;
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+/*zgjedhja e fontit per Galaxy*/
+ul #g
+{font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size: 55px;
+color: #000000;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+
+th a{ color: DarkViolet;}
+
+
+
+
+/* ngjyrosja e background-it ne te zeze ne tabelen e fundit dhe footer-it*/
+#n {background-color: black;
+color: white;}
+footer {background-color: black;
+color: white}
+#a1 {color: DarkViolet;}
+
+
+/* dizajnimi i teresishem i faqes*/
+#black {background-color: black;
+padding: 2px;
+}
+#brenda { border-radius: 15px;
+background-color: white;
+}
+body { background-image: url(Images/g34.jpg);}
