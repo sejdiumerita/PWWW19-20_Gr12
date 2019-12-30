@@ -119,7 +119,7 @@ li a {color: black;}
 	  border: none;
 	  height: 0.5px;
 	  background: gray;
-	  margin-bottom: 100px;
+	  margin-bottom: 30px;
   }
   /* vendosja e kornizave te fotove */
  figure  img   {
@@ -141,13 +141,14 @@ figure h4 {text-align: left;
 
 
 /* vija pas fotove pink*/
-hr #v2 {
+hr#v2 {
           position: relative;
-    	  top: 250px;
     	  border: none;
     	  height: 8px;
     	  margin-bottom: 50px;
     	  background: DarkViolet;
+    	  margin-top: 30px;
+    	  margin-bottom: 0px;
 
 }
 
@@ -169,6 +170,7 @@ td #submit {
   height: 10px;
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 
 td a {text-decoration: none;}
