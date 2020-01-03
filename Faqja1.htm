@@ -7,16 +7,41 @@
         <script type="text/javascript" src="js/Application.js"></script>
    </head>
     <body> 
-        <form method="get" action="" id="mainForm">
+        <form method="get" action="" autocomplete="on">
           <fieldset>
             <legend> Questionnaire</legend>
+            
+ 
+
+<script>
+var w;
+
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+            
  <table>
         
         <tr>
         <td colspan="2">
        
             <p> <label>Name</label></br>
-                <input type="text" name="name" id="name" placeholder="Type your name" class="required hilightable" /> 
+                <input type="text" name="name" id="name"  placeholder="Type your name" autofocus   /> 
             </p>         
             <p> 
             <label>Surname</label></br>
@@ -94,11 +119,24 @@
 </p>
       <p>
         <input type="submit" name="Submit"/>
-        <input type="reset" name="Reset"/>
+        <input type="reset" name="Reset"/></br>
+        
+        <p>Count numbers: <output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button> 
+        <button onclick="stopWorker()">Stop Worker</button>
       </p>
-      </td>
+      
+         </td>
+      <td>
+      
+     
+    
+     
+     </td>
+    
     </table>
     </fieldset>
-</form>
+</form>        
 </body>
 </html>
+     
