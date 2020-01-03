@@ -18,15 +18,17 @@ font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   }
 
   /* e kemi ndryshu kornizen e inputit search*/
-label input  {
-               border-radius: 10px;
+input  {
+              border-radius: 10px;
                 background: #353535;
                 padding: 10px;
                 width: 200px;
                 height: 10px;
                 text-decoration: none;
                 color: white;
+                float: right;
 }
+
   p label  {float: right; }
 
 
@@ -101,16 +103,7 @@ li a {color: black;}
   text-decoration: none;
   color: white;
 }
-/* border search*/
-  #search {
-  border-radius: 10px;
-  background: DarkViolet;
-  padding: 10px;
-  width: 50px;
-  height: 10px;
-  text-decoration: none;
-  color: white;
-}
+
 /* vija pas view full gallery*/
    #v1
   {
@@ -161,7 +154,7 @@ th {
   height: 50px;
 }
 
-
+/* ne fund te tabeles butoni sumbit*/
 td #submit {
   border-radius: 10px;
   background: DarkViolet;
@@ -171,6 +164,7 @@ td #submit {
   text-decoration: none;
   color: white;
   text-align: center;
+
 }
 
 td a {text-decoration: none;}
@@ -191,6 +185,9 @@ p a i {color: gray;}
     color: black;
     }
     a:hover {color: DarkViolet;}
+    
+    
+   
 
 /* fotot e animacionit*/
 
@@ -265,8 +262,6 @@ text-transform: capitalize;
 th a{ color: DarkViolet;}
 
 
-
-
 /* ngjyrosja e background-it ne te zeze ne tabelen e fundit dhe footer-it*/
 #n {background-color: black;
 color: white;}
@@ -282,4 +277,29 @@ padding: 2px;
 #brenda { border-radius: 15px;
 background-color: white;
 }
+
 body { background-image: url(Images/g34.jpg);}
+
+#search {
+ border-radius: 10px;
+  background: DarkViolet;
+  padding: 10px;
+  width: 70px;
+  height: 35px;
+  text-decoration: none;
+  color: white;
+  float: right;
+}
+
+#ss {
+   border-radius: 10px;
+  background: DarkViolet;
+  padding: 10px;
+  width: 70px;
+  height: 35px;
+  text-decoration: none;
+  color: white;
+  float: left;
+
+}
+#p2 { float: left; }
