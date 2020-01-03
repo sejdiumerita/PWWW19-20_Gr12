@@ -8,10 +8,24 @@
     <link rel="stylesheet" type="text/css" href="PWWW19-20_Gr12.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/html" href="Faqja2.html"/>
+    <link rel="stylesheet" type ="text/html" href="Faqja1.htm"/>
 
 </head>
 
 <body>
+
+<script type="text/javascript">
+function d(g) {
+window.open('https://www.google.com/#q='+g +"site:google.com",  'G1window');
+}
+      </script>
+<form onsubmit="d(this.g.value); return false;" id="f">
+    <input type="submit" value="Search"  id="search"/>
+    <input type="text" name="g" size="20" placeholder="Search Our Website..." />
+</form>
+
+
+
 <section id="black">
 <p>
     <a href="http://www.snapchat.com"><i class="fa fa-snapchat" style="font-size:24px"></i></a>
@@ -20,10 +34,7 @@
     <a href="http://www.google.com"><i class="fa fa-google-plus-circle" style="font-size:24px;"></i></a>
     <a href="http://www.chrome.com"><i class="fa fa-chrome" style="font-size:24px;"></i></a>
 
-    <label>
-        <input type="text" name="Search" placeholder="Search Our Website...">
-         <a id="search" href="#">Search</a>
-    </LABEL>
+
 </p>
     <section id="brenda">
 <p>
@@ -37,7 +48,7 @@
 <li><a href="#">CONSTELLATIONS</a></li>
 <li><a href="#">SOLAR SYSTEM</a></li>
 <li><a href="http://localhost:63342/HelloWorld/.idea/PWWW19-20_Gr12/Faqja2.html?_ijt=g3b3sr0miqilrs8svqmneh2crn">NEWS</a></li>
-<li><a href="http://localhost:63342/HelloWorld/.idea/PWWW19-20_Gr12/PWWW19-20_Gr12.html?_ijt=iu6e8v0hgor425pgouanag95nh">HOMEPAGE</a></li><hr align="right" width="70%">
+<li><a href="http://localhost:63342/HelloWorld/.idea/PWWW19-20_Gr12/PWWW19-20_Gr12.html?_ijt=iu6e8v0hgor425pgouanag95nh" target="_blank">HOMEPAGE</a></li><hr align="right" width="70%">
 <br>
         </ul>
      </nav>
@@ -162,7 +173,8 @@ $(window).load(function() {
                 <figcaption><a href="https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/overview/?page=0&per_page=40&order=id+asc&search=&condition_1=meteor_shower%3Abody_type">
                     Meteores and Meteorits</a></figcaption>
 
-            </figure><p>They’re all related to the flashes<br>
+            </figure>
+                <p>They’re all related to the flashes<br>
                 of light called “shooting stars”<br>
                 sometimes seen streaking across the sky.
                  </p></th>
@@ -210,10 +222,9 @@ $(window).load(function() {
                 </p></td>
 
             <td><a href="http://localhost:63342/HelloWorld/.idea/PWWW19-20_Gr12/PWWW19-20_Gr12.html?_ijt=c8ijbj5f8hv64go18vofbilpg7" id="a1">Project</a><hr align="left" width="70%">
+                <br> <a href="file:///C:/xampp/htdocs/PWWW19-20_Gr12/Faqja1.htm" id="a1">Faqja1</a><hr align="left" width="70%">
                 <br> <a href="http://localhost:63342/HelloWorld/.idea/PWWW19-20_Gr12/Faqja2.html?_ijt=j8bvk2567atnc38nhsgtjuu4dc" id="a1">Faqja2</a><hr align="left" width="70%">
                 <br> <a href="#" id="a1">Link Text Here</a><hr align="left" width="70%">
-                <br> <a href="#" id="a1">Link Text Here</a><hr align="left" width="70%">
-
             </td>
 
             <td>Our mission is to provide<br>
@@ -223,9 +234,15 @@ $(window).load(function() {
                 our planet and space.
                 </br></td>
             <td>
-                <label><input ype="text" name="name" placeholder="Name" /></label> <br>
-                <label><input type="text" name="Email" placeholder="Email"/> </label> <br>
-                <form action="">      <input id ="submit" type="SUBMIT" name="SUBMIT"/> </form>
+                <form action="" >
+                    <p id="p2">
+                        <input ype="text" name="name" placeholder="Name" id="f"/> <br>
+                        <input type="text" name="Email" placeholder="Email" id="f"/>  <br>
+                        <br>
+                        <input id ="ss" type="SUBMIT" name="SUBMIT"  /></p>
+                </form>
+
+
             </td>
         </tr>
         </tbody>
