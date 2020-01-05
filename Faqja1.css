@@ -8,6 +8,8 @@
 body label
 {
     word-wrap: break-word;
+    color: DarkViolet;
+
 }
 
 body
@@ -23,6 +25,12 @@ table
 {
     width: 50%;
     margin: 0 auto ;
+   
+}
+
+fieldset 
+{
+     background-color: white;
 }
 
 
@@ -30,6 +38,7 @@ legend
 {
    text-align: center;
    font-size: 30px;
+   background-color: white;
 }
 
 
@@ -87,5 +96,46 @@ form input[type="tel"]
 
 }
 
+#submit {
+         border-radius: 10px;
+          background: DarkViolet;
+          padding: 10px;
+          width: 70px;
+          height: 35px;
+          text-decoration: none;
+          color: white;
 
+        }
 
+#reset {
+         border-radius: 10px;
+          background: DarkViolet;
+          padding: 10px;
+          width: 70px;
+          height: 35px;
+          text-decoration: none;
+          color: white;
+
+        }
+
+ #start {
+          border-radius: 10px;
+           background: DarkViolet;
+           padding: 10px;
+           width: 70px;
+           height: 45px;
+           text-decoration: none;
+           color: white;
+
+         }
+
+ #stop {
+          border-radius: 10px;
+           background: DarkViolet;
+           padding: 10px;
+           width: 70px;
+           height: 45px;
+           text-decoration: none;
+           color: white;
+
+         }
