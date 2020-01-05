@@ -16,7 +16,6 @@ body
 {
     font-family: sans-serif;
     font-size: 16px;
-    background-image: url(Images/g34.jpg);
 }
 
 #all { background-color: white; }
@@ -25,10 +24,10 @@ table
 {
     width: 50%;
     margin: 0 auto ;
-   
+
 }
 
-fieldset 
+fieldset
 {
      background-color: white;
 }
