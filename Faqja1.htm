@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Faqja1</title>
-    <link rel="stylesheet" type="text/css" href="Faqja1.css">
-    <script type="text/javascript" src="js/Application.js"></script>
-</head>
-<section>
-<form method="get" action="" autocomplete="on">
-    <fieldset>
-        <legend style="color: white"> Questionnaire</legend>
+    <head>
+        <meta charset="utf-8">
+        <title>Faqja1</title>
+        <link rel="stylesheet" type="text/css" href="Faqja1.css">
+        <script type="text/javascript" src="js/Application.js"></script>
+        
+  
+        
+   </head>
+    <body> 
+        <form method="get" action="" autocomplete="on">
+          <fieldset>
+            <legend> Questionnaire</legend>
+            
+ 
+      <script>
+var now = new Date();
+var hours = now.getHours();
 
 
 
-        <script>
+
+if (hours > 6 && hours < 20){
+ document.write ('<body style="background-color: black">');
+}
+
+else {
+ document.write ('<body style="background-color: white">');
+
+}
+</script>
+<script>
 var w;
+
 function startWorker() {
   if(typeof(Worker) !== "undefined") {
     if(typeof(w) == "undefined") {
@@ -28,106 +47,114 @@ function startWorker() {
   }
 }
 
-function stopWorker() {
+function stopWorker() { 
   w.terminate();
   w = undefined;
 }
 </script>
-<section id="all">
-        <table>
+            
+ <table>
+        
+        <tr>
+        <td colspan="2">
+       
+            <p> <label>Name</label></br>
+                <input type="text" name="name" id="name"  placeholder="Type your name" autofocus   /> 
+            </p>         
+            <p> 
+            <label>Surname</label></br>
+            <input type="text" name="surname" id="surname" placeholder="Type your surname" class="required hilightable"/>  
+            </p>
+            <p>
+            <label>Email</label></br>
+            <input type="email" name="email" id="email" placeholder="name@domain.com" class="required hilightable"/>
+            </p>
+            <p>
+                <label>Phone number</label></br>
+                <input type="tel"  name="Phone number" id="Phone number" placeholder="Type your phone number" />
+            </p>
+            <p>
+            <label>Birthday</label></br>
+            <input type="date" name="birthday" id="age" class="required hilightable" />
+            </p>
+        </tr>
+        </td>
+        
+           
+        
+        
+        
+         <td>
+              <div class="box">
+            <label>Gender</label><br/>
+            <input type="radio" name="copyright" value="1">M <br/>
+            <input type="radio" name="copyright" value="2">F <br/>
+ 
 
-            <tr>
-                <td colspan="2">
-
-                    <p> <label>Name</label></br>
-                        <input type="text" name="name" id="name"  placeholder="Type your name" autofocus   />
-                    </p>
-                    <p>
-                        <label>Surname</label></br>
-                        <input type="text" name="surname" id="surname" placeholder="Type your surname" class="required hilightable"/>
-                    </p>
-                    <p>
-                        <label>Email</label></br>
-                        <input type="email" name="email" id="email" placeholder="name@domain.com" class="required hilightable"/>
-                    </p>
-                    <p>
-                        <label>Phone number</label></br>
-                        <input type="tel"  name="Phone number" id="Phone number" placeholder="Type your phone number" />
-                    </p>
-                    <p>
-                        <label>Birthday</label></br>
-                        <input type="date" name="birthday" id="age" class="required hilightable" />
-                    </p>
-            </tr>
-            </td>
-
-
-
-
-
-            <td>
-                <div class="box">
-                    <label>Gender</label><br/>
-                    <input type="radio" name="copyright" value="1">M <br/>
-                    <input type="radio" name="copyright" value="2">F <br/>
-
-
-                </div>
-
-                <p><label>Education</label></b>
-                    <select name="Education" class="hilightable">
-                        <option>Choose</option>
-                        <option>University "HASAN PRISHTINA"</option>
-                        <option>University "KADRI ZEKA"</option>
-                        <option>College "AAB"</option>
-                        <option>College "FAMA"</option>
-                        <option>College "UBT"</option>
-                        <option>College "UNIVERSUM"</option>
-                    </select>
-                </p>
-
-
-                <p> <label>Study year</label><br/>
-                    <select name="study year" class="hilightable">
-                        <option>Choose year</option>
-                        <option>I</option>
-                        <option>II</option>
-                        <option>III</option>
-                        <option>IV</option>
-                        <<option>Graduated</option>
-                    </select>
-                </p>
-
-
-                <p><label>City</label><br/>
-                    <select name="City" class="hilightable ">
-                        <option>Choose city</option>
-                        <option>Prishtne</option>
-                        <option>Peje</option>
-                        <option>Prizeren</option>
-                        <option>Gjakove</option>
-                        <option>Gjilan</option>
-                        <option>Ferizaj</option>
-                        <option>Mitrovice</option>
-                        <option>Viti</option>
-                    </select>
-                </p>
-                <p>
-                    <input type="submit" name="Submit"/>
-                    <input type="reset" name="Reset"/></br>
-
-                <p>Count numbers: <output id="result"></output></p>
-                <button onclick="startWorker()">Start Worker</button>
-                <button onclick="stopWorker()">Stop Worker</button>
-                </p>
-
-            </td>
-
-
-        </table>
+         </div>
+            
+             
+            
+    
+    
+     <p><label>Education</label></b>
+                 <select name="Education" class="hilightable">
+                     <option>Choose</option>
+                     <option>University "HASAN PRISHTINA"</option>
+                     <option>University "KADRI ZEKA"</option>
+                     <option>College "AAB"</option>
+                     <option>College "FAMA"</option>
+                     <option>College "UBT"</option>
+                     <option>College "UNIVERSUM"</option>
+                 </select>
+             </p>
+             
+             
+             <p> <label>Study year</label><br/>
+        <select name="study year" class="hilightable">
+            <option>Choose year</option>
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+            <<option>Graduated</option>
+        </select>
+    </p>
+   
+             
+        <p><label>City</label><br/>
+            <select name="City" class="hilightable ">
+            <option>Choose city</option>
+            <option>Prishtne</option>
+            <option>Peje</option>
+            <option>Prizeren</option>
+            <option>Gjakove</option>
+	    <option>Gjilan</option>
+	    <option>Ferizaj</option>
+	    <option>Mitrovice</option>
+            <option>Viti</option>
+        </select>
+</p>
+      <p>
+        <input type="submit" name="Submit"/>
+        <input type="reset" name="Reset"/></br>
+        
+        <p>Count numbers: <output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button> 
+        <button onclick="stopWorker()">Stop Worker</button>
+      </p>
+      
+         </td>
+      <td>
+      
+     
+    
+     
+     </td>
+    
+    </table>
     </fieldset>
-</form>
-
-</body></section>
+</form>        
+</body>
 </html>
-
+     
