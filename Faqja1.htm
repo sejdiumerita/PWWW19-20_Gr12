@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Faqja1</title>
     <link rel="stylesheet" type="text/css" href="Faqja1.css">
-    <script type="text/javascript" src="js/Application.js"></script>
+    <link rel="stylesheet" href="webworker.js"/>
 
 
 
@@ -33,15 +33,15 @@ else {
 var w;
 
 function startWorker() {
-  if(typeof(Worker) !== "undefined") {
-    if(typeof(w) == "undefined") {
-      w = new Worker("demo_workers.js");
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("webworker.js");
     }
     w.onmessage = function(event) {
       document.getElementById("result").innerHTML = event.data;
     };
   } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
   }
 }
 
